@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Prayash Dahal - Self Introduction</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+    @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background: radial-gradient(circle at center, #0ff2, #000);
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 500px;
+      width: 90%;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 2rem;
+      border-radius: 20px;
+      border: 2px solid #00fff7;
+      box-shadow: 0 0 30px #00fff7;
+      text-align: center;
+      animation: fadeIn 1.5s ease forwards;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      color: #00fff7;
+      text-shadow: 0 0 15px #00fff7, 0 0 30px #00fff7;
+      animation: glowPulse 3s infinite alternate;
+    }
+
+    .profile-img {
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 2rem;
+      border: 5px solid #00ffe1;
+      box-shadow: 0 0 25px #00ffe1, 0 0 45px #00ffe1;
+      animation: rotateBack 5s infinite ease-in-out;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .profile-img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 35px #00ffe1, 0 0 55px #00ffe1;
+    }
+
+    .info-section {
+      margin-bottom: 1.5rem;
+      padding: 0.8rem;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid #0ff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #0ff5;
+      transition: background 0.3s ease;
+    }
+
+    .info-section:hover {
+      background: rgba(0, 255, 255, 0.1);
+    }
+
+    .info-section p {
+      font-size: 1.1rem;
+      color: #ccc;
+    }
+
+    .dob p {
+      line-height: 1.6;
+    }
+
+    .social-section {
+      margin-top: 2rem;
+    }
+
+    .social-title {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      color: #ff00ff;
+      text-shadow: 0 0 10px #ff00ff;
+    }
+
+    .social-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .social-button {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.6rem 1.2rem;
+      border: 2px solid #0ff;
+      background: transparent;
+      color: #0ff;
+      border-radius: 30px;
+      font-size: 1rem;
+      text-decoration: none;
+      box-shadow: 0 0 15px #0ff;
+      transition: all 0.3s ease;
+    }
+
+    .social-button i {
+      font-size: 1.2rem;
+    }
+
+    .social-button:hover {
+      background: #0ff;
+      color: #000;
+      box-shadow: 0 0 25px #0ff, 0 0 40px #0ff;
+    }
+
+    @keyframes rotateBack {
+      0% { transform: rotate(0deg); }
+      50% { transform: rotate(5deg); }
+      100% { transform: rotate(0deg); }
+    }
+
+    @keyframes glowPulse {
+      0% { text-shadow: 0 0 10px #00fff7, 0 0 20px #00fff7; }
+      100% { text-shadow: 0 0 20px #00fff7, 0 0 40px #00fff7; }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 2rem; }
+      .profile-img { width: 120px; height: 120px; }
+      .info-section p { font-size: 1rem; }
+      .social-button { font-size: 0.9rem; padding: 0.5rem 1rem; }
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Prayash Dahal</h1>
+    <img src="img.png" alt="Profile Image" class="profile-img"/>
+
+    <div class="info-section">
+      <p><strong>Age:</strong> 13 years old</p>
+    </div>
+
+    <div class="info-section">
+      <p><strong>Address:</strong> GaneshTole, 4-Pokhara</p>
+    </div>
+
+    <div class="info-section">
+      <p><strong>Class:</strong> 7</p>
+    </div>
+
+    <div class="info-section dob">
+      <p><strong>Date of Birth:</strong><br>2069/08/06 BS<br>2012/11/22 AD</p>
+    </div>
+
+    <div class="social-section">
+      <div class="social-title">Connect With Me</div>
+      <div class="social-buttons">
+        <a class="social-button" href="https://www.instagram.com/prayash_dahal22" target="_blank">
+          <i class="fab fa-instagram"></i> Instagram
+        </a>
+        <a class="social-button" href="https://www.facebook.com/prayash.dahal.790" target="_blank">
+          <i class="fab fa-facebook-f"></i> Facebook
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
